@@ -1,13 +1,13 @@
 class Module {
   constructor(options) {
     const defaults = {
-      x: 0,
-      y: 0,
-      w: 1,
-      h: 1,
-      rotate: 0,
-      pattern: new Solid(),
-      roundCorners: { topRight: 0, bottomRight: 0, bottomLeft: 0, topLeft: 0 },
+      x: 0, //? column position
+      y: 0, //? row position
+      w: 1, //? width
+      h: 1, //? height
+      rotate: 0, //? module rotation
+      pattern: new Solid(), //? shown pattern
+      roundCorners: { topRight: 0, bottomRight: 0, bottomLeft: 0, topLeft: 0 }, //? rounded corners
     }
     Object.assign(this, defaults, options)
   }

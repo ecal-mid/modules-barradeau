@@ -1,3 +1,5 @@
+//? click to generate a new bird
+
 const MODULES = []
 const GRID = {
   rows: 5,
@@ -45,7 +47,7 @@ function mousePressed() {
 function generateBird() {
 
   const tailHeight = random(0.5, 1.5)
-  
+
   MODULES.length = 0 //? empty array
 
   MODULES.push(

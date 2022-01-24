@@ -1,4 +1,5 @@
 //? click to generate a new bird
+// zozio.ecal-mid.ch
 
 const MODULES = []
 const GRID = {
@@ -63,13 +64,13 @@ function generateBird() {
     new Module({ x: 0, y: 0, pattern: new Eye() }),
 
     //* body
-    new Module({ x: 0, y: 1, pattern: new Stripes(), rotate: 0 }),
-    new Module({ x: 1, y: 1, pattern: new CornerCircle(), roundCorners: { bottomRight: 1 }, rotate: -90 }),
-    new Module({ x: 0, y: 2, pattern: new CornerCircle(), roundCorners: { bottomRight: 1 }, rotate: 90 }),
-    new Module({ x: 1, y: 2, pattern: new Stripes(), rotate: 180 }),
+    new Module({ x: 0, y: 1, pattern: random([new CornerCircle(), new Stripes()]), rotate: 180 }),
+    new Module({ x: 1, y: 1, pattern: random([new CornerCircle(), new Stripes()]), roundCorners: { bottomRight: 1 }, rotate: -90 }),
+    new Module({ x: 0, y: 2, pattern: random([new CornerCircle(), new Stripes()]), roundCorners: { bottomRight: 1 }, rotate: 90 }),
+    new Module({ x: 1, y: 2, pattern: random([new CornerCircle(), new Stripes()]), rotate: 0 }),
 
     //* tail
-    new Module({ x: 1, y: 3, h: tailHeight, pattern: new Stripes(), rotate: 180 }),
+    new Module({ x: 1, y: 3, h: tailHeight, pattern: new Stripes(), rotate: 0 }),
     new Module({ x: 1, y: 3 + tailHeight, pattern: new CornerCircle(), roundCorners: { bottomRight: 1 }, rotate: 90 }),
 
 

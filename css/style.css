@@ -3,4 +3,18 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.link {
+  color: inherit;
+}
+.--absolute {
+  position: absolute;
+}
+.--bottom {
+  bottom: 1em;
+}
+.--left {
+  right: 1em;
 }
